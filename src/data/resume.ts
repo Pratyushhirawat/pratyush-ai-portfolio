@@ -162,31 +162,6 @@ export const projects: Project[] = [
     demo: "https://ai-fitness-gym-coach.vercel.app/",
     status: "Shipped",
   },
-  {
-    id: "fittrack",
-    title: "fitTrack",
-    tagline: "Full-stack AI fitness tracker with Gemini-powered recommendations.",
-    stack: ["React", "TypeScript", "Strapi CMS", "Google Gemini API", "Vercel"],
-    problem:
-      "Most calorie trackers log numbers but never turn them into an actual recommendation the user can act on.",
-    solution:
-      "A full-stack AI fitness application that tracks daily calorie intake and burn and uses the Google Gemini API to turn that data into personalized recommendations.",
-    features: [
-      "Daily calorie intake and burn tracking",
-      "Personalized recommendations powered by Google Gemini API",
-      "Type-safe React + TypeScript frontend",
-      "Strapi as a headless CMS backend",
-      "Production deployment on Vercel",
-    ],
-    architecture:
-      "A type-safe React + TypeScript client calls a Strapi headless CMS for content and data persistence, and calls the Google Gemini API to generate personalized nutrition/fitness recommendations from the user's tracked data. The whole stack is deployed to production on Vercel.",
-    results:
-      "Shipped a production-deployed, full-stack AI product spanning frontend, CMS backend, and an external LLM API — end to end.",
-    tags: ["AI", "GenAI", "Full Stack", "React", "Dashboard"],
-    github: "https://github.com/Pratyushhirawat/FitTrack",
-    demo: "https://fit-track-mauve.vercel.app",
-    status: "Shipped",
-  },
 ];
 
 export type EducationItem = {

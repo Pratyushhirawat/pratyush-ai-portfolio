@@ -54,18 +54,6 @@ export const products: Product[] = [
     status: "Live",
     tags: ["AI", "Computer Vision", "Machine Learning", "Python"],
   },
-  {
-    id: "fittrack",
-    name: "fitTrack",
-    description:
-      "Full-stack AI fitness tracker: React + TypeScript frontend, Strapi CMS backend, Gemini-powered recommendations.",
-      image: "/images/fittrack.png", 
-    stack: ["React", "TypeScript", "Strapi CMS", "Vercel"],
-    aiTech: ["Google Gemini API", "GenAI Recommendations"],
-    github: "https://github.com/Pratyushhirawat/FitTrack",
-    demo: "https://fit-track-mauve.vercel.app",
-    status: "Live",
-    tags: ["AI", "GenAI", "Full Stack", "React", "Dashboard"],
-  },
+  
   // Add your next project here — same shape, new id.
 ];
