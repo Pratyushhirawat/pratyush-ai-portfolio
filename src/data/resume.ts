@@ -106,6 +106,7 @@ export type Project = {
   architecture: string;
   results: string;
   tags: string[]; // used by the filter system
+  category: "Major" | "Minor";
   github?: string; // PLACEHOLDER
   demo?: string; // PLACEHOLDER
   status: "Shipped" | "In Progress" | "Concept";
@@ -133,6 +134,7 @@ export const projects: Project[] = [
     results:
       "Delivered a working end-to-end biometric attendance pipeline connecting recognition models to a persistent, queryable attendance record.",
     tags: ["AI", "Machine Learning", "Computer Vision", "Full Stack", "Python"],
+    category: "Minor",
     github: "https://github.com/Pratyushhirawat/snapclass",
     demo: "https://snapclass-alpha.vercel.app/",
     status: "Shipped",
@@ -158,9 +160,36 @@ export const projects: Project[] = [
     results:
       "Produced a self-contained fitness coaching loop — from raw video to spoken, personalized feedback — for three core exercises.",
     tags: ["AI", "Computer Vision", "Machine Learning", "Python"],
+    category: "Minor",
     github: "https://github.com/Pratyushhirawat/AI-GYM-COACH",
     demo: "https://ai-fitness-gym-coach.vercel.app/",
     status: "Shipped",
+  },
+  {
+    id: "interviewai",
+    title: "interviewAI",
+    tagline: "An AI voice interviewer that runs full mock technical & HR interview rounds.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Redis", "Firebase", "Razorpay", "Docker"],
+    problem:
+      "Job seekers rarely get realistic interview practice on demand, and most resumes never get checked against how ATS systems actually screen candidates before a human sees them.",
+    solution:
+      "A full-stack career prep platform that combines an ATS-aware resume builder, a personalized AI-generated learning roadmap, and a voice-driven AI interviewer that conducts both technical and HR rounds — with a built-in code editor for live coding questions.",
+    features: [
+      "AI voice interviewer conducting both Technical and HR interview rounds",
+      "In-built code editor for coding rounds — answer by typing or speaking",
+      "Resume builder with instant ATS compatibility scoring",
+      "AI-generated learning roadmap with attached YouTube lectures and articles per topic",
+      "Google Sign-In via Firebase and Razorpay-powered subscription payments",
+      "Central dashboard tracking resumes, interviews, and roadmap progress",
+    ],
+    architecture:
+      "Microservices backend (Auth, Billing, Interview, Resume, Roadmap) behind an API gateway, with AI agents driving the voice interview flow, Redis for shared session state, and a React frontend — each service containerized independently with Docker.",
+    results:
+      "Shipped a multi-service platform end-to-end: authentication, payments, an AI-driven voice interview engine, and an ATS-aware resume builder, all running as independently deployable services.",
+    tags: ["AI", "GenAI", "Full Stack"],
+    category: "Major",
+    github: "https://github.com/Pratyushhirawat/interviewAI",
+    status: "In Progress",
   },
 ];
 

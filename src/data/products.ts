@@ -1,5 +1,5 @@
-
 export type ProductStatus = "Live" | "In Development" | "Archived";
+export type ProductCategory = "Major" | "Minor";
 
 export type Product = {
   id: string;
@@ -12,11 +12,14 @@ export type Product = {
   demo?: string;
   caseStudyUrl?: string;
   status: ProductStatus;
+  category: ProductCategory;
   tags: string[]; 
 };
 
 export const filterTags = [
   "All",
+  "Major",
+  "Minor",
   "AI",
   "Machine Learning",
   "Data Science",
@@ -39,6 +42,7 @@ export const products: Product[] = [
     github: "https://github.com/Pratyushhirawat/snapclass",
     demo: "https://snapclass-alpha.vercel.app/",
     status: "Live",
+    category: "Minor",
     tags: ["AI", "Machine Learning", "Computer Vision", "Full Stack", "Python"],
   },
   {
@@ -52,8 +56,21 @@ export const products: Product[] = [
     github: "https://github.com/Pratyushhirawat/AI-GYM-COACH",
     demo: "https://ai-fitness-gym-coach.vercel.app/",
     status: "Live",
+    category: "Minor",
     tags: ["AI", "Computer Vision", "Machine Learning", "Python"],
   },
-  
+  {
+    id: "interviewai",
+    name: "interviewAI",
+    description:
+      "An all-in-one AI career prep platform — resume builder with ATS scoring, an AI-generated learning roadmap, and a voice-based AI interviewer for technical and HR rounds, complete with a built-in code editor.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Redis", "Docker"],
+    aiTech: ["AI Voice Interviewer", "LLM Agents", "ATS Resume Scoring", "Speech-to-Text"],
+    github: "https://github.com/Pratyushhirawat/interviewAI",
+    status: "In Development",
+    category: "Major",
+    tags: ["AI", "GenAI", "Full Stack"],
+  },
+
   // Add your next project here — same shape, new id.
 ];

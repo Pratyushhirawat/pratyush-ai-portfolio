@@ -70,7 +70,10 @@ export default function Products() {
                         {p.name}
                       </span>
                     )}
-                    <div className="absolute right-3 top-3">
+                    <div className="absolute right-3 top-3 flex gap-1.5">
+                      <span className="mono-tag rounded-full bg-current/10 px-2.5 py-1 text-current/70">
+                        {p.category}
+                      </span>
                       <span className={`mono-tag rounded-full px-2.5 py-1 ${statusColor[p.status]}`}>
                         {p.status}
                       </span>

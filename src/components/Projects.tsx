@@ -42,15 +42,20 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               <span className="mono-tag text-blue-300">project_0{index + 1}</span>
               <h3 className="mt-2 font-display text-2xl font-semibold text-paper">{project.title}</h3>
             </div>
-            <span
-              className={`mono-tag rounded-full px-3 py-1 ${
-                project.status === "Shipped"
-                  ? "bg-teal/15 text-blue-300"
-                  : "bg-coral/15 text-coral"
-              }`}
-            >
-              {project.status}
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="mono-tag rounded-full bg-white/10 px-3 py-1 text-paper/70">
+                {project.category}
+              </span>
+              <span
+                className={`mono-tag rounded-full px-3 py-1 ${
+                  project.status === "Shipped"
+                    ? "bg-teal/15 text-blue-300"
+                    : "bg-coral/15 text-coral"
+                }`}
+              >
+                {project.status}
+              </span>
+            </div>
           </div>
 
           <p className="relative mt-4 text-sm leading-relaxed text-paper/70">{project.tagline}</p>
