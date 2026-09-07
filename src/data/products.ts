@@ -1,4 +1,4 @@
-export type ProductStatus = "Live" | "In Development" | "Archived";
+export type ProductStatus = "Live" | "Under Development" | "Completed";
 export type ProductCategory = "Major" | "Minor";
 
 export type Product = {
@@ -23,11 +23,8 @@ export const filterTags = [
   "AI",
   "Machine Learning",
   "Data Science",
-  "GenAI",
-  "Analytics",
   "Full Stack",
   "Python",
-  "Dashboard",
 ] as const;
 
 export const products: Product[] = [
@@ -42,8 +39,8 @@ export const products: Product[] = [
     github: "https://github.com/Pratyushhirawat/snapclass",
     demo: "https://snapclass-alpha.vercel.app/",
     status: "Live",
-    category: "Minor",
-    tags: ["AI", "Machine Learning", "Computer Vision", "Full Stack", "Python"],
+    category: "Major",
+    tags: ["AI", "Machine Learning", "Data Science", "Python"],
   },
   {
     id: "ai-gym-coach",
@@ -56,20 +53,21 @@ export const products: Product[] = [
     github: "https://github.com/Pratyushhirawat/AI-GYM-COACH",
     demo: "https://ai-fitness-gym-coach.vercel.app/",
     status: "Live",
-    category: "Minor",
-    tags: ["AI", "Computer Vision", "Machine Learning", "Python"],
+    category: "Major",
+    tags: ["AI", "Data Science", "Machine Learning", "Python"],
   },
   {
     id: "interviewai",
     name: "interviewAI",
     description:
       "An all-in-one AI career prep platform — resume builder with ATS scoring, an AI-generated learning roadmap, and a voice-based AI interviewer for technical and HR rounds, complete with a built-in code editor.",
+      image: "/images/interviewDashboard.jpeg",
     stack: ["React", "Node.js", "Express", "MongoDB", "Redis", "Docker"],
     aiTech: ["AI Voice Interviewer", "LLM Agents", "ATS Resume Scoring", "Speech-to-Text"],
     github: "https://github.com/Pratyushhirawat/interviewAI",
-    status: "In Development",
+    status: "Completed",
     category: "Major",
-    tags: ["AI", "GenAI", "Full Stack"],
+    tags: ["AI", "Full Stack", "Major"],
   },
 
   // Add your next project here — same shape, new id.

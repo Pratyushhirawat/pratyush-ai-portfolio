@@ -43,7 +43,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               <h3 className="mt-2 font-display text-2xl font-semibold text-paper">{project.title}</h3>
             </div>
             <div className="flex items-center gap-2">
-              <span className="mono-tag rounded-full bg-white/10 px-3 py-1 text-paper/70">
+              <span className="mono-tag rounded-full bg-black px-3 py-1 text-white/70">
                 {project.category}
               </span>
               <span

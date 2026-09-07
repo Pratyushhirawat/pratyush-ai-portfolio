@@ -7,8 +7,8 @@ import SectionHeading from "./SectionHeading";
 
 const statusColor: Record<string, string> = {
   Live: "bg-indigo/15 text-indigo",
-  "In Development": "bg-coral/15 text-coral",
-  Archived: "bg-current/10 text-current/50",
+  "Under Development": "bg-coral/15 text-coral",
+  "Completed": "bg-teal/10 text-teal/50",
 };
 
 export default function Products() {
